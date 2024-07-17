@@ -22,7 +22,7 @@ export function HttpModule (http:HttpClient){
     TranslateModule.forRoot({
       loader:{
         provide:TranslateLoader,
-        useFactory:HttpModule,
+        useFactory:HttpModule, 
         deps:[HttpClient]
       }
     })
